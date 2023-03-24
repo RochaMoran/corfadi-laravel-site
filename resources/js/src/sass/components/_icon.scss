@@ -1,0 +1,59 @@
+.specialize {
+  display: grid;
+  place-items: center;
+  width: 400px;
+}
+
+.icon-header {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+
+  & .icon-img {
+    width: 100px;
+    object-fit: cover;
+    filter: invert(1);
+
+    @media screen and (min-width: 1800px) {
+      width: 180px;
+    }
+  }
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 263px;
+  color: white;
+  font-family: $font-primary;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+
+  @media screen and (min-width: 1800px) {
+    font-size: x-large;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
+}
+
+.icon-body {
+  color: white;
+  justify-content: center;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media screen and (min-width: 1800px) {
+    font-size: large;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.9rem;
+  }
+}

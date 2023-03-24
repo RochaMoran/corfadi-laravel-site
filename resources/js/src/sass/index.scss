@@ -1,0 +1,17 @@
+@import './normalize';
+@import './utilities/colors';
+@import './utilities/fonts';
+@import './utilities/global-styles';
+@import './mixins/_hover-button.scss';
+@import './mixins/hover-image';
+@import './components/icon';
+@import './components/specialize';
+@import './components/banner';
+@import './components/header';
+@import './components/footer';
+@import './pages/home';
+@import './pages/about';
+@import './pages/briefcase';
+@import './pages/contactUs';
+@import './pages/faqs';
+@import './pages/servicesAndProducts';

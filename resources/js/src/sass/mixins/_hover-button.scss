@@ -1,0 +1,52 @@
+@mixin hover-button($bgc-value) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $bgc-value;
+    transition: all 0.35s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  & span {
+    position: relative;
+  }
+}
+
+@mixin hover-button-2($bgc-value) {
+  position: relative;
+  overflow: hidden;
+
+  span {
+    z-index: 20;
+  }
+
+  &:after {
+    background-color: $bgc-value;
+    content: '';
+    height: 155px;
+    left: -75px;
+    opacity: 0.3;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 0;
+  }
+
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}

@@ -1,0 +1,282 @@
+// TODO: esto lo hago para guiarme, despues se elimina
+
+.about-who__are {
+  position: relative;
+  background-color: #213353da;
+  color: white;
+  @include hover-image();
+
+  @media screen and (min-width: 1800px) {
+    padding: 80px 40px;
+  }
+
+  @media screen and (max-width: 1800px) {
+    padding: 60px 30px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 20px 10px;
+  }
+
+  & .who-are__content {
+    text-align: center;
+    z-index: 1;
+
+    & h3 {
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      @media screen and (min-width: 1800px) {
+        font-size: xx-large;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    & p {
+      font-family: $font-secondary;
+      font-weight: lighter;
+
+      @media screen and (min-width: 1800px) {
+        font-size: x-large;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  & .image-who__are {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-mision {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  border: 1px solid #a7a7a743;
+  padding: 10px;
+  border-radius: 5px;
+  @include hover-image();
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  & .about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+
+    & .about-title h2 {
+      @media screen and (min-width: 1800px) {
+        font-size: xx-large;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    & p {
+      @media screen and (min-width: 1800px) {
+        font-size: x-large;
+      }
+    }
+  }
+
+  & .about-mision__item {
+    margin: 0 15px;
+  }
+
+  & .about-mision__image {
+    display: block;
+    width: 40%;
+    object-fit: cover;
+
+    @media screen and (min-width: 1800px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 1800px) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      height: 300px;
+    }
+
+    @media screen and (max-width: 950px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.about-vision {
+  @media screen and (max-width: 950px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+
+    @media screen and (max-width: 950px) {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: justify;
+    }
+
+    & .tricolor-line__mision {
+      margin: 0;
+    }
+  }
+}
+
+.tricolor-line__mision {
+  width: 100px;
+
+  @media screen and (min-width: 1800px) {
+    width: 110px;
+    margin: 0;
+  }
+}
+
+.mision-vision-container {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(212, 217, 223);
+  padding: 6rem 4rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+
+.values-section {
+  padding: 2.25rem 2rem;
+
+  @media screen and (max-width: 1024px) {
+    padding: 2.25rem 1rem;
+  }
+}
+
+.values-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .values-title h2 {
+    @media screen and (min-width: 1800px) {
+      font-size: xx-large;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  & p {
+    @media screen and (max-width: 500px) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.about-values {
+  background-color: $bg-other-color-two;
+  box-sizing: content-box;
+  margin: 20px 0;
+  padding: 10px;
+
+  @media screen and (min-width: 1800px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 5px;
+  }
+}
+
+.values-title {
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+  }
+}
+
+.values-body {
+  width: 70%;
+  font-size: 1.2rem;
+  font-family: $font-secondary;
+  line-height: 30px;
+
+  @media screen and (min-width: 1800px) {
+    font-size: x-large;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    line-height: 20px;
+  }
+}
+
+.values-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  gap: 16px;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 0;
+  }
+}
+
+.about-image__footer {
+  @include hover-image();
+  & img {
+    width: 100%;
+  }
+}

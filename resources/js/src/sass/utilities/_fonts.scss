@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Babapro';
+  src: url('/fonts/BabaPro-Bold.ttf');
+}
+
+$font-primary: Babapro;
+$font-secondary: Poppins;

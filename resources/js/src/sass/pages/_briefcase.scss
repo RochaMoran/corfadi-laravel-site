@@ -1,0 +1,59 @@
+@import "../components/banner";
+
+.supplier__section {
+  border: 0.5px solid gainsboro;
+  margin: 20px 0;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.supplier-head__section {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+
+  & h4 {
+    font-size: 2rem;
+    font-family: $font-primary;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1800px) {
+      font-size: xx-large;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.supplier-content__section {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+
+  @media screen and (min-width: 1800px) {
+    font-size: x-large;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+
+.main-specialize-banner__icons {
+  //   background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

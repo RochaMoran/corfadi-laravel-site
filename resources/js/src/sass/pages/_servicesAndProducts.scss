@@ -1,0 +1,17 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+
+  @media screen and (max-width: 330px) {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 5px;
+  }
+}
+
+.card-products {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.107);
+  overflow: hidden;
+  border-radius: 8px;
+}
